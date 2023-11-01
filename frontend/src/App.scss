@@ -1,0 +1,207 @@
+@import '../src/styles/variables';
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+//HOME PAGE 
+
+    .homePage-nav{
+        .logo{
+            padding: 0;
+            text-align: left;
+            margin-left: 3rem;
+            img{
+                height: 3.5rem;
+            }
+
+            @media only screen and (max-width:768px) {
+                text-align: center;
+                margin: 0;
+            }
+        }
+        
+        .minicart{
+            text-align: right;
+            i{
+                color: white;
+            }
+            @media only screen and (max-width:768px) {
+                display: none;
+            }
+        }
+    }
+    .banner-side{
+        background-image: url('./assets/Banner-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 47.1rem;
+
+        @media (max-width:768px) {
+                height: auto;
+            }
+
+        .heading{
+            @include center-heading;
+            font-size: 4rem;
+
+            @media (max-width:768px) {
+                transform: none;
+                font-size: 4rem;
+            }
+        }
+        .heading-info{
+            @include center-heading;
+            font-size: 1rem;
+            width: 50rem;
+            margin: auto;
+            font-weight: 300;
+
+            @media (max-width:768px) {
+                width: auto;
+                margin-top: 5rem;
+            }
+        }
+        .diveIn-btn{
+            @include center-heading;
+            font-size: 1.15rem;
+            font-weight: 600;
+            @include animated-underline;
+        }
+    }
+
+
+//PLP PAGE SECTION
+.nav-icon{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.banner{
+    background-image: url('./assets/plp-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    .quote{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+}
+
+.explore-our-products{
+    font-weight: 900;
+}
+
+.product-categories{
+    .productrow{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+        @media only screen and (max-width:992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media only screen and (max-width:768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        @media only screen and (max-width:481px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .product{
+            .product-info{
+                .product-category{
+                    font-size: 1.25rem;
+                    color: grey;
+                }
+                .product-name{
+                    color: black;
+                    font-weight: 600;
+                }
+                .product-price{
+                    color: red;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.backHome-btn{
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 600;
+    @include animated-underline;
+    &::before{
+        background-color: black !important;
+    }
+}
+
+
+//page description section
+.pdp-page{
+    .description-section{
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        .product-image{
+            img{
+                height: 25rem;
+                width: 21rem;
+            }
+            text-align: center;
+
+            @media only screen and (max-width:768px){
+                text-align: start;
+            }
+        }
+        .product-information{
+            .data{
+                .product-title{
+                    font-size: 2.5rem;
+                    font-weight: 600;  
+                }
+                .product-price{
+                    font-size: 1.35rem;
+                    color: red;
+                    font-weight: 600;
+                }
+                .product-decription{
+                    font-size: 1.25rem;
+                }
+            }
+            .addToCart{
+                button{
+                    background-color: black;
+                    color: white;
+                    padding: 1rem 1.25rem;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .back-links{
+        .backtoHome{
+            text-align: end;
+
+            @media only screen and (max-width:768px){
+                text-align: center;
+            }
+        }
+        .backtoPLP{
+            @media only screen and (max-width:768px){
+                text-align: center;
+            }
+        }
+    }
+
+    .copyright{
+        margin-top: 3.30rem;
+    }
+}

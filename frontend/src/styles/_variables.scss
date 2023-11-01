@@ -1,0 +1,27 @@
+@mixin center-heading{
+    color: white;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+@mixin animated-underline{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::before{
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+      "body-parser": "^1.20.2",
+      "cors": "^2.8.5",
+      "express": "^4.18.2",
+      "live-reload": "^1.1.1",
+      "mongodb": "^5.5.0",
+      "mongoose": "^7.2.1",
+      "mongosh": "^1.9.1",
+      "nodemon": "^2.0.22"
+    },
+    "scripts": {
+      "start": "nodemon server.js"
+    },
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend server for e-commerce",
+    "main": "server.js",
+    "author": "Sahil",
+    "license": "ISC"
+  }
+  
