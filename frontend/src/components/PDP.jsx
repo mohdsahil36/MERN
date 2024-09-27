@@ -21,7 +21,7 @@ function ProductDescription(){
 
     const specificResponse = async() => {
         try{
-            const newresponse= await fetch('http://localhost:8000/pdp/'+productId);  //fetching the data api from the local host
+            const newresponse= await fetch('https://mern-rcda.onrender.com/pdp/'+productId);  //fetching the data api from the local host
             const newjsonData= await newresponse.json();
             // console.log("This is the data fetched from api",newjsonData);
 
