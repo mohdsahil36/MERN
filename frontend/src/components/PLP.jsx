@@ -8,7 +8,7 @@ function ProductList() {
 
             const fetchData = async() => {
                 try{
-                    const response= await fetch('http://localhost:8000/plp');  //fetching the data api from the local host
+                    const response= await fetch('https://mern-rcda.onrender.com/plp');  //fetching the data api from the local host
                     const jsonData= await response.json();
                     // console.log(jsonData);
     
